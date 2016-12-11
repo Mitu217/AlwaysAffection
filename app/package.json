@@ -1,0 +1,14 @@
+{
+	"name": "AlwaysAffection",
+	"main": "index.html",
+	"window": {
+			"width": 200,
+			"height": 250,
+		"icon": "icon.png",
+		"transparent": true,
+		"toolbar": false,
+		"frame": false,
+		"always_on_top": true,
+		"show": false
+	}
+}

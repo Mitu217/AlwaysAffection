@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>いつでもAffection</title>
+</head>
+
+<style>
+html {
+  height: 200px;
+  width: 200px;
+}
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.0);
+  color:#fff;
+  -webkit--app-region: drag;
+}
+.content {
+  position: absolute;
+  bottom: .25rem;
+  right: 0rem
+}
+</style>
+
+<script>
+  var gui = require('nw.gui');
+  var win = gui.Window.get();
+  win.moveTo(
+    window.screen.availWidth - win.width,
+    window.screen.availHeight - win.height
+  );
+  win.show();
+</script>
+
+<body>
+  <div class="content">
+    <img src="Affection.gif" width="200" height="200" border="0" align="center" hspace="10" vspace=10 loop=infinite ondragstart="return false;"  oncontextmenu="return false;">
+  </div>
+</body>
+</html>
